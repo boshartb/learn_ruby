@@ -32,19 +32,23 @@ end
 describe "sum" do
 
   it "computes the sum of an empty array" do
-    expect(sum([])).to eq(0)
+    numbers = []
+    expect(sum(numbers)).to eq(0)
   end
 
   it "computes the sum of an array of one number" do
-    expect(sum([7])).to eq(7)
+    numbers = [7]
+    expect(sum(numbers)).to eq(7)
   end
 
   it "computes the sum of an array of two numbers" do
-    expect(sum([7,11])).to eq(18)
+    numbers = [7,11]
+    expect(sum(numbers)).to eq(18)
   end
 
   it "computes the sum of an array of many numbers" do
-    expect(sum([1,3,5,7,9])).to eq(25)
+    numbers = [1,3,5,7,9]
+    expect(sum(numbers)).to eq(25)
   end
 end
 
